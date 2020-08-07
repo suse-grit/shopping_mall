@@ -197,10 +197,10 @@ CACHES = {
 
 # 邮箱配置
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'  # 邮件发送配置，固定写法
-EMAIL_HOST = 'smtp.qq.com'  # 对应厂家的SMTP服务器地址
-EMAIL_PORT = 25  # SMTP服务的默认端口
-EMAIL_HOST_USER = '1129212285@qq.com'  # 发送邮件的QQ邮箱
-EMAIL_HOST_PASSWORD = 'inpzglbsbciziaih'  # 邮箱授权码
+EMAIL_HOST = ''  # 对应厂家的SMTP服务器地址
+EMAIL_PORT = ''  # SMTP服务的默认端口
+EMAIL_HOST_USER = ''  # 发送邮件的QQ邮箱
+EMAIL_HOST_PASSWORD = ''  # 邮箱授权码
 
 # 第三方登录配置
 '''
