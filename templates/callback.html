@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>激活</title>
+    <link href="../static/css/index.css" rel="Stylesheet" />
+    <link href="../static/css/animate.css" rel="Stylesheet" />
+    <link rel="stylesheet" href="../static/css/slide.css" />
+    <link rel="icon" href="../static/images/index/py.ico">
+    <link rel="stylesheet" href="../static/css/findpass.css">
+    <script src="../static/js/init.js"></script>
+    <script src="../static/js/jquery-3.1.1.min.js"></script>
+</head>
+<div id="top">
+    <div id="logo" class="lf">
+        <a href=" ">
+            <img class="animated jello" src="../static/images/header/logo.png" alt="logo" />
+        </a >
+    </div>
+    <div id="top_input" class="lf">
+        <input id="input" type="text" placeholder="请输入您要搜索的内容" />
+        <a href="#" class="rt"><img id="search" src="../static/images/header/search.png" alt="搜索" /></a >
+    </div>
+    <div class="rt">
+        <ul class="lf">
+            <li><a href="myCollect.html" title="我的收藏"><img class="care" src="../static/images/header/care.png"
+                        alt="" /></a ><b>|</b></li>
+            <li><a href="myOrder.html" title="我的订单"><img class="order" src="../static/images/header/order.png"
+                        alt="" /></a ><b>|</b></li>
+            <li><a href="cart.html" title="我的购物车"><img class="shopcar" src="../static/images/header/shop_car.png"
+                        alt="" /></a ><b>|</b></li>
+            <li><a href="lookforward.html">帮助</a ><b>|</b></li>
+            <li id='my_login'><a href="login.html">登录</a ></li>
+        </ul>
+    </div>
+</div>
+
+
+<div id="findpass">
+    <div class="query">请稍候。。。</div>
+    <div class="success" style="display: none">登录成功</div>
+    <div class="form_box" style="display: none">
+        <div>
+            <label for="uname">用户名：</label>
+            <input autocomplete required minlength="6" maxlength="9" type="text" placeholder="请输入用户名" autofocus name="uname"
+              id="uname" />
+        </div>
+        <div>
+            <label for="phone">手机号：</label>
+            <input id="phone" name="phone" placeholder="请输入您的手机号"required type="text" />
+        </div>
+        <div>
+            <label for="email">邮箱：</label>
+            <input autocomplete required type="email" placeholder="请输入邮箱地址" name="email" id="email" />
+        </div>
+        <div>
+            <label for="upwd">登录密码：</label>
+            <input required type="password" minlength="6" maxlength="12" placeholder="请输入密码" name="upwd" autofocus id="upwd" />
+        </div>
+        <p class="submit">提交</p >
+    </div>
+</div>
+
+<div id="foot_box">
+    <div class="icon1 lf">
+        <img src="../static/images/footer/icon1.png" alt="" />
+        <h3>品质保障</h3>
+    </div>
+    <div class="icon2 lf">
+        <img src="../static/images/footer/icon2.png" alt="" />
+        <h3>私人定制</h3>
+    </div>
+    <div class="icon3 lf">
+        <img src="../static/images/footer/icon3.png" alt="" />
+        <h3>皮粉特供</h3>
+    </div>
+    <div class="icon4 lf">
+        <img src="../static/images/footer/icon4.png" alt="" />
+        <h3>专属特权</h3>
+    </div>
+</div>
+<!-- 页面底部-->
+<div class="foot_bj">
+    <div id="foot">
+        <div class="lf">
+            <p class="footer1"><img src="../static/images/footer/logo.png" alt="" class=" footLogo" /></p >
+            <p class="footer2"><img src="../static/images/footer/footerFont.png" alt="" /></p >
+        </div>
+        <!-- <div class="foot_left lf" >
+                <ul>
+                    <li><a href="#"><h3>买家帮助</h3></a ></li>
+                    <li><a href="#">新手指南</a ></li>
+                    <li><a href="#">服务保障</a ></li>
+                    <li><a href="#">常见问题</a ></li>
+                </ul>
+                <ul>
+                    <li><a href="#"><h3>商家帮助</h3></a ></li>
+                    <li><a href="#">商家入驻</a ></li>
+                    <li><a href="#">商家后台</a ></li>
+                </ul>
+                <ul>
+                    <li><a href="#"><h3>关于我们</h3></a ></li>
+                    <li><a href="#">关于皮爷</a ></li>
+                    <li><a href="#">联系我们</a ></li>
+                    <li>
+                        < img src="../images/footer/wechat.png" alt=""/>
+                        < img src="../images/footer/sinablog.png" alt=""/>
+                    </li>
+                </ul>
+            </div> -->
+        <div class="service">
+            <p>皮爷の商城客户端</p >
+            <img src="../static/images/footer/ios.png" class="lf">
+            <img src="../static/images/footer/android.png" alt="" class="lf" />
+        </div>
+        <div class="download">
+            <img src="../static/images/footer/erweima.png">
+        </div>
+        <!-- 页面底部-备案号 #footer -->
+        <div class="record">
+            &copy;2018 皮爷の集团有限公司 版权所有 京ICP证xxxxxxxxxxx
+        </div>
+    </div>
+</div>
+</body>
+<script src="../static/js/jquery-3.1.1.min.js"></script>
+<script>
+    var uid = ""
+    var querystring = location.search
+    window.onload=function(){
+        $.ajax({
+                url: baseUrl+'/v1/users/weibo/users'+querystring,
+                type: 'get',
+                dataType: "json",
+                success: function (res) {
+                    if (res.code == 200) {
+                        window.localStorage.clear();
+                        window.localStorage.setItem('dashop_token', res.token);
+                        window.localStorage.setItem('dashop_user', res.username);
+                        $('.query').css({display:"block"})
+                        $(".success").css({display:"none"})
+                        $('.form_box').css({display:"none"})
+                        setTimeout(()=>{
+                            window.location.href="index.html"
+                        },3000)
+                    }else if(res.code == 201){
+                        $('.query').css({display:"none"})
+                        $(".success").css({display:"none"})
+                        $('.form_box').css({display:"block"})
+                        // access_token = res.access_token
+                        uid = res.uid
+                    }else{
+                        alert(res.error)
+                    }
+                }
+            })
+    }
+        $(".submit").click (function(){
+        var uname = $("#uname").val()
+        var phone = $("#phone").val()
+        var password = $("#upwd").val()
+        var email = $("#email").val()
+            if(uname&&phone&&password&&email){
+                $.ajax({
+                url: baseUrl+'/v1/users/weibo/users',
+                type: 'post',
+                data:JSON.stringify({uid,username:uname,password,phone,email}),
+                contentType:'application/json',
+                dataType: "json",
+                success: function (res) {
+                    if(res.code===200){
+                        window.localStorage.clear();
+                        window.localStorage.setItem('dashop_token', res.token);
+                        window.localStorage.setItem('dashop_user', res.username);
+                        $('.query').css({display:"block"})
+                        $(".success").css({display:"none"})
+                        $('.form_box').css({display:"none"})
+                        setTimeout(()=>{
+                            window.location.href="index.html"
+                        },3000)
+                    }else{
+                        alert(res.error)
+                    }
+                }
+            })
+            }else{
+                alert('信息请填写完整！！！')
+            }
+        })
+
+</script>
+</html>

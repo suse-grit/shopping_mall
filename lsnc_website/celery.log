@@ -1,0 +1,57 @@
+nohup: ignoring input
+
+Restarting celery worker (/usr/local/bin/celery -A lsnc_website worker -P gevent -c 1000)
+[2020-07-30 22:29:40,951: ERROR/MainProcess] Task user.views.send_active_email[db05e0fd-3b0f-4a34-8ffd-7d1a01a03ba8] raised unexpected: OSError(101, 'Network is unreachable')
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/celery/app/trace.py", line 412, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/celery/app/trace.py", line 704, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/home/ubuntu/gmy/lsnc_website/user/views.py", line 108, in send_active_email
+    html_message=html_message)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/mail/__init__.py", line 60, in send_mail
+    return mail.send()
+  File "/usr/local/lib/python3.6/dist-packages/django/core/mail/message.py", line 291, in send
+    return self.get_connection(fail_silently).send_messages([self])
+  File "/usr/local/lib/python3.6/dist-packages/django/core/mail/backends/smtp.py", line 103, in send_messages
+    new_conn_created = self.open()
+  File "/usr/local/lib/python3.6/dist-packages/django/core/mail/backends/smtp.py", line 63, in open
+    self.connection = self.connection_class(self.host, self.port, **connection_params)
+  File "/usr/lib/python3.6/smtplib.py", line 251, in __init__
+    (code, msg) = self.connect(host, port)
+  File "/usr/lib/python3.6/smtplib.py", line 336, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+  File "/usr/lib/python3.6/smtplib.py", line 307, in _get_socket
+    self.source_address)
+  File "/usr/local/lib/python3.6/dist-packages/gevent/socket.py", line 101, in create_connection
+    sock.connect(sa)
+  File "/usr/local/lib/python3.6/dist-packages/gevent/_socket3.py", line 428, in connect
+    raise error(result, strerror(result))
+OSError: [Errno 101] Network is unreachable
+[2020-08-01 14:37:16,620: ERROR/MainProcess] Task user.views.send_active_email[945b917d-42ed-485e-b74e-73775bb33271] raised unexpected: OSError(101, 'Network is unreachable')
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/celery/app/trace.py", line 412, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/celery/app/trace.py", line 704, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/home/ubuntu/gmy/lsnc_website/user/views.py", line 108, in send_active_email
+    html_message=html_message)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/mail/__init__.py", line 60, in send_mail
+    return mail.send()
+  File "/usr/local/lib/python3.6/dist-packages/django/core/mail/message.py", line 291, in send
+    return self.get_connection(fail_silently).send_messages([self])
+  File "/usr/local/lib/python3.6/dist-packages/django/core/mail/backends/smtp.py", line 103, in send_messages
+    new_conn_created = self.open()
+  File "/usr/local/lib/python3.6/dist-packages/django/core/mail/backends/smtp.py", line 63, in open
+    self.connection = self.connection_class(self.host, self.port, **connection_params)
+  File "/usr/lib/python3.6/smtplib.py", line 251, in __init__
+    (code, msg) = self.connect(host, port)
+  File "/usr/lib/python3.6/smtplib.py", line 336, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+  File "/usr/lib/python3.6/smtplib.py", line 307, in _get_socket
+    self.source_address)
+  File "/usr/local/lib/python3.6/dist-packages/gevent/socket.py", line 101, in create_connection
+    sock.connect(sa)
+  File "/usr/local/lib/python3.6/dist-packages/gevent/_socket3.py", line 428, in connect
+    raise error(result, strerror(result))
+OSError: [Errno 101] Network is unreachable

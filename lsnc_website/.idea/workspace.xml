@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b945b4a6-cfd9-4879-82e1-4c23f8930bca" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/lsnc_website/uwsgi.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/static/images/footer/android.png" beforeDir="false" afterPath="$PROJECT_DIR$/../client/static/images/footer/android.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/static/images/footer/erweima.png" beforeDir="false" afterPath="$PROJECT_DIR$/../client/static/images/footer/erweima.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/static/images/footer/footerFont.png" beforeDir="false" afterPath="$PROJECT_DIR$/../client/static/images/footer/footerFont.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/static/images/footer/icon1.png" beforeDir="false" afterPath="$PROJECT_DIR$/../client/static/images/footer/icon1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/static/images/footer/icon2.png" beforeDir="false" afterPath="$PROJECT_DIR$/../client/static/images/footer/icon2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/static/images/footer/icon3.png" beforeDir="false" afterPath="$PROJECT_DIR$/../client/static/images/footer/icon3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/static/images/footer/icon4.png" beforeDir="false" afterPath="$PROJECT_DIR$/../client/static/images/footer/icon4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/static/images/footer/ios.png" beforeDir="false" afterPath="$PROJECT_DIR$/../client/static/images/footer/ios.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/static/images/footer/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/../client/static/images/footer/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/static/images/list/100324.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/static/images/list/100332.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/static/images/list/100411.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/static/images/list/100542.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/static/images/list/100655.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/static/images/list/101420.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/static/images/list/101427.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/static/images/list/101443.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/static/images/list/101618.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/static/images/list/101814.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/static/images/list/101826.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/static/images/list/102096.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/static/images/list/102112.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/static/images/list/102118.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/static/images/list/102225.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/static/images/list/102339.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/static/images/list/102381.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/static/images/list/102515.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/static/images/list/102548.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/static/images/list/102552.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/static/images/list/102742.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/static/images/list/102744.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/static/images/list/102746.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/static/images/list/102747.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/static/images/list/102818.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/static/images/list/102837.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/static/images/list/102855.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/static/images/list/102941.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/static/images/list/103200.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/static/images/list/103206.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/static/images/list/103207.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/static/images/list/103208.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/static/images/list/103209.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/static/images/list/103211.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/static/images/list/103212.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/static/images/list/103213.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/static/images/list/103215.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/static/images/list/103216.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/static/images/list/103360.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/static/images/list/103372.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/static/images/list/103390.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/static/images/list/103783.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/static/images/list/103787.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/static/images/list/104179.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/static/images/list/104295.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/static/images/list/104330.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/static/images/list/250.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/static/images/list/462.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/static/images/list/600.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/static/images/list/601.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/static/images/list/603.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/static/images/list/604.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/static/images/list/605.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/static/images/list/655.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/static/images/list/712.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/static/images/list/741.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/static/images/list/759.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/static/images/list/760.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/static/images/list/772.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/static/images/list/890.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/static/images/list/891.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/static/images/list/902.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/static/images/list/gulid.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../client/static/images/list/gulid.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/static/images/list/product_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/static/images/list/product_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/static/images/list/product_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/static/images/list/product_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/static/images/list/product_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/static/images/list/product_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/static/images/list/product_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/static/images/list/product_8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/static/images/list/product_9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/static/images/product_detail/product_detail.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../client/static/images/product_detail/product_detail.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/static/images/product_detail/product_detail_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/../client/static/images/product_detail/product_detail_1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/static/images/product_detail/product_detail_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/../client/static/images/product_detail/product_detail_2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/static/images/product_detail/product_detail_3.png" beforeDir="false" afterPath="$PROJECT_DIR$/../client/static/images/product_detail/product_detail_3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/static/images/product_detail/product_detail_4.png" beforeDir="false" afterPath="$PROJECT_DIR$/../client/static/images/product_detail/product_detail_4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/static/js/orderconfirm.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/static/js/orderconfirm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/templates/addressAdmin.html" beforeDir="false" afterPath="$PROJECT_DIR$/../client/templates/addressAdmin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/templates/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/../client/templates/cart.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../client/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/templates/myOrder.html" beforeDir="false" afterPath="$PROJECT_DIR$/../client/templates/myOrder.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/templates/product_details.html" beforeDir="false" afterPath="$PROJECT_DIR$/../client/templates/product_details.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/templates/product_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/../client/templates/product_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/../client/templates/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goods/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/goods/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lsnc_website/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/lsnc_website/settings.py" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1eLcqhMhUanCaHGvQeiOR4cnfBb" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ToolWindowEvent Log.ShowToolbar" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/media/sku" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/media/sku" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.demo">
+    <configuration name="demo" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="lsnc_website" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/utils" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/utils/demo.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="my_jwt" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="lsnc_website" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/utils" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/utils/my_jwt.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="lsnc_website" type="Python.DjangoServer" factoryName="Django server">
+      <module name="lsnc_website" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.demo" />
+        <item itemvalue="Python.my_jwt" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b945b4a6-cfd9-4879-82e1-4c23f8930bca" name="Default Changelist" comment="" />
+      <created>1594104505391</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1594104505391</updated>
+      <workItem from="1594104506936" duration="1305000" />
+      <workItem from="1594106053194" duration="2562000" />
+      <workItem from="1594115891012" duration="612000" />
+      <workItem from="1594181292424" duration="7254000" />
+      <workItem from="1594199716070" duration="6197000" />
+      <workItem from="1594212730481" duration="3200000" />
+      <workItem from="1594256300888" duration="11611000" />
+      <workItem from="1594298722941" duration="5429000" />
+      <workItem from="1594343415141" duration="17378000" />
+      <workItem from="1594434112976" duration="13537000" />
+      <workItem from="1594525220381" duration="13898000" />
+      <workItem from="1594688934424" duration="1034000" />
+      <workItem from="1594880288944" duration="587000" />
+      <workItem from="1595041186583" duration="7509000" />
+      <workItem from="1595122969696" duration="11633000" />
+      <workItem from="1595207735557" duration="8625000" />
+      <workItem from="1595291036141" duration="15982000" />
+      <workItem from="1595377690042" duration="2961000" />
+      <workItem from="1595466426390" duration="2280000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/lsnc_website$demo.coverage" NAME="demo Coverage Results" MODIFIED="1595229593315" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
+    <SUITE FILE_PATH="coverage/lsnc_website$my_jwt.coverage" NAME="my_jwt Coverage Results" MODIFIED="1594205928014" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
+  </component>
+</project>

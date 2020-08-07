@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+	<meta charset="UTF-8">
+	<title>我的订单 - 绿色农产网</title>
+	<link rel="stylesheet" href="../static/css/index.css">
+	<link href="../static/css/myOrder.css" rel="Stylesheet" />
+	<link href="../static/css/personage.css" rel="stylesheet" />
+	<link rel="icon" href="../static/images/index/py.ico">
+	<!--模态框的样式文件 -->
+	<link rel="stylesheet" href="../static/css/modal.css">
+	<script src="../static/js/init.js"></script>
+</head>
+
+<body>
+	<!-- 页面顶部-->
+	<!-- <header id="header"></header> -->
+	<div id="top">
+        <div id="logo" class="lf">
+            <a href="index.html">
+                <img class="animated jello" src="../static/images/header/logo.png" alt="logo" />
+            </a>
+        </div>
+        <div id="top_input" class="lf">
+            <input id="input" type="text" placeholder="本店内搜索" />
+            <a href="#" class="rt" ><img id="search" src="../static/images/header/search.png" alt="搜索" /></a>
+        </div>
+        <div class="rt">
+            <ul class="lf">
+                <li><a href="addressAdmin.html" title="我的地址"><img src="../static/images/header/care.svg" alt="" /></a><b>|</b></li>
+                <li><a href="myOrder.html" title="我的订单"><img class="order" src="../static/images/header/order.svg" alt="" /></a><b>|</b></li>
+                <li><a class="my_cart" href="cart.html" title="我的购物车"><b class="my_cart_count">0</b><img class="shopcar" src="../static/images/header/shop_car.svg" alt="" /></a><b>|</b></li>
+                <li><a href="register.html">注册</a><b>|</b></li>
+                <li id ='my_login'><a href="login.html" >登录</a></li>
+            </ul>
+        </div>
+	</div>
+	<ul>
+		<li style="height: 20px;"></li>
+		<li style="text-align: center;"><a href=""><img src="../static/images/index/index_logo.png" alt=""></a></li>
+	</ul>
+	<!-- 我的订单导航栏-->
+	<div id="nav_order">
+
+	</div>
+	<!--我的订单内容区域 #container-->
+	<div id="container" class="clearfix">
+		<!-- 左边栏-->
+		<div id="leftsidebar_box" class="lf">
+			<div class="line"></div>
+			<dl class="my_order">
+				<dt >我的订单
+                    <img src="../static/images/myOrder/myOrder2.png">
+                </dt>
+                <dd id="all_orders" class="first_dd"><span>全部订单</span></dd>
+                <dd>
+                    <span id="obligation" href="#">
+                        待付款
+                        <span></span>
+                    </span>
+                </dd>
+                  <dd>
+                    <span id="undelivered" href="#">
+                        待发货
+                        <span></span>
+                    </span>
+                </dd>
+                <dd>
+                    <span id="wait_receiving" href="#">
+                        待收货
+                        <span></span>
+                    </span>
+                </dd>
+
+                 <dd>
+                    <span id="finished" href="#">
+                         已完成
+                        <span></span>
+                    </span>
+                </dd>
+			</dl>
+
+			<dl class="footMark">
+				<dt onClick="changeImage()">我的优惠卷<img src="../static/images/myOrder/myOrder1.png"></dt>
+			</dl>
+			<dl class="address">
+				<dt>收货地址<img src="../static/images/myOrder/myOrder1.png"></dt>
+				<dd><a href="addressAdmin.html">地址管理</a></dd>
+			</dl>
+			<dl class="count_managment">
+				<dt onClick="changeImage()">帐号管理<img src="../static/images/myOrder/myOrder1.png"></dt>
+				<!-- <dd class="first_dd"><a href="personage.html">我的信息</a></dd>-->
+				<!-- <dd><a href="personal_icon.html">个人头像</a></dd> -->
+				<dd><a href="personal_password.html">安全管理</a></dd>
+			</dl>
+		</div>
+		<!-- 右边栏-->
+		<div class="rightsidebar_box rt">
+			<!--标题栏-->
+			<div class="rs_header">
+				<span class="address_title">收获地址管理</span>
+			</div>
+			<!--收货人信息填写栏-->
+			<div class="rs_content">
+				<form method="post" action="">
+					<!--收货人姓名-->
+					<div class="recipients">
+						<span class="red">*</span><span class="kuan">收货人：</span><input type="text" name="receiverName" id="receiverName"
+						 />
+					</div>
+					<!--收货人所在城市等信息-->
+					<div data-toggle="distpicker" class="address_content">
+						<span class="red">*</span><span class="kuan">省份：</span><select data-province="---- 选择省 ----" id="receiverState"></select>
+						城市：<select data-city="---- 选择市 ----" id="receiverCity"></select>
+						区/县：<select data-district="---- 选择区 ----" id="receiverDistrict"></select>
+					</div>
+
+
+					<!--收货人详细地址-->
+					<div class="address_particular">
+						<span class="red">*</span><span class="kuan">详细地址：</span><textarea name="receiverAddress" id="receiverAddress"
+						 cols="60" rows="3" placeholder="建议您如实填写详细收货地址"></textarea>
+					</div>
+					<!--收货人地址-->
+					<div class="address_tel">
+						<span class="red">*</span><span class="kuan">手机号码：</span><input type="tel" id="receiverMobile" name="receiverMobile"
+						 />
+						<!-- 固定电话：<input type="text" name="receiverPhone" id="receiverPhone"/> -->
+					</div>
+					<!--邮政编码-->
+					<div class="address_postcode">
+						<span class="red">*</span><span class="kuan">邮政编码：</span>&nbsp;<input type="text" name="receiverZip" id='receiverZip'
+						 />
+					</div>
+					<!--地址名称-->
+					<div class="address_name">
+						<span class="red">*</span><span class="kuan">地址名称：</span>&nbsp;<input type="text" id="addressName" name="addressName"
+						 />如：<span class="sp">家</span><span class="sp">公司</span><span class="sp">宿舍</span>
+					</div>
+					<!--保存收货人信息-->
+					<div class="save_recipient">
+						保存收货人信息
+					</div>
+				</form>
+				<!--已有地址栏-->
+				<div class="address_information_manage">
+					<div class="aim_title">
+						<span class="dzmc dzmc_title">地址名称</span><span class="dzxm dzxm_title">姓名</span><span class="dzxq dzxq_title">地址详情</span><span
+						 class="lxdh lxdh_title">联系电话</span><span class="operation operation_title">操作</span>
+						 <span class="operation operation_title">是否默认</span>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 用户点击修改时弹出的模态框 -->
+	<div class="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            </div>
+        </div>
+    </div>
+	<footer id="footer"></footer>
+</body>
+<script type="text/javascript" src="../static/js/jquery-3.1.1.min.js"></script>
+<script src="../static/js/index.js"></script>
+<script type="text/javascript" src="../static/js/distpicker.data.js"></script>
+<script type="text/javascript" src="../static/js/distpicker.js"></script>
+<script src="../static/js/jquery.page.js"></script>
+<script type="text/javascript" src="../static/js/order.js"></script>
+<script type="text/javascript">
+	var username=window.localStorage.getItem('dashop_user')
+   //页面加载完成加载用户列表
+   $(function(){
+	   loadUserList();
+   })
+	//加载用户列表：
+	function loadUserList(){
+		$.ajax({
+			url:baseUrl+'/v1/users/'+username+'/address',
+			type:'get',
+			beforeSend:function(request){
+				request.setRequestHeader("authorization",localStorage.getItem('dashop_token'))
+			},
+			success(data){
+				// console.log(data);
+				if(data.code == 403){
+					alert('用户认证已过期，请重新登录');
+					window.localStorage.removeItem('dashop_user');
+					window.localStorage.removeItem('dashop_token');
+					window.localStorage.removeItem('dashop_count');
+					location.href = 'login.html'
+				}
+				if(data.code==200){
+					var userList=data.addresslist;
+					// console.log(userList);
+					$(".aim_content_one").remove();
+					let html="";
+					for(var ul of userList){
+						// console.log(ul);
+						html+=`
+						<div class="aim_content_one ${ul.is_default?'aim_active':''}" data-id="${ul.is_default?1:''}">
+						<span class="dzmc dzmc_active">${ul.tag}</span>
+						<span class="dzxm dzxm_normal">${ul.receiver}</span>
+						<span class="dzxq dzxq_normal">${ul.address}</span>
+						<span class="lxdh lxdh_normal">${ul.receiver_mobile}</span>
+						<span class="operation operation_normal">
+							<span class="aco_change" data-uid="${ul.id}">修改</span>|<span class="aco_delete" data-uid="${ul.id}">删除</span>
+						</span>
+						<span class="swmr swmr_normal" data-uid="${ul.id}">${ul.is_default?"":"设置默认"}</span>
+					</div>
+						`
+					}
+					$(".address_information_manage").append(html);
+					//删除的事件
+					$(".aco_delete").click(function(){
+						var id=$(this).data("uid");
+						// console.log(id);
+						del(id);
+					})
+					//更新的事件
+					$(".aco_change").click(function(){
+						var id=$(this).data("uid");
+						updateUser(this,id)
+					})
+					//设置默认的点击时间
+					$(".swmr").click(function(){
+						// console.log($(this).data("uid"));
+						var uid=$(this).data("uid");
+						setDefaults(uid);
+					})
+				}else{
+					alert(data.error)
+				}
+			}
+		})
+	}
+	// 删除功能
+	function del(id){
+		//用户登录时在本地存储中存的用户名
+		// var username=sessionStorage.getItem("username");
+		$.ajax({
+			type:'delete',
+			url:baseUrl+'/v1/users/'+username+'/address/'+id,
+			data:JSON.stringify({username,id}),
+			contentType:'application/json',
+			datatype:JSON,
+			beforeSend:function(request){
+				request.setRequestHeader("authorization",localStorage.getItem('dashop_token'))
+			},
+			success(data){
+				//如果删除成功
+				if(data.code == 403){
+					alert('用户认证已过期，请重新登录');
+					window.localStorage.removeItem('dashop_user');
+					window.localStorage.removeItem('dashop_token');
+					window.localStorage.removeItem('dashop_count');
+					location.href = 'login.html'
+				}
+				if(data.code==200){
+					//重现渲染用户列表数据
+					alert(data.data)
+					loadUserList()
+				}else{
+					//否则就是操作有误
+					alert(data.error);
+				}
+			}
+		})
+
+	}
+	//修改功能
+	function updateUser(div,id){
+		$("div.modal").css({display:'block'});
+		// console.log($(div).parent().parent().children());
+		var html=$(div).parent().parent().children();
+		var addressId=id
+		console.log("----",html,div,id)
+		$("div.modal-content").html(`
+			   地址标签: <input class="tag" type="text" value="${html[0].innerHTML}"><br>
+               收件人: <input type="text"  class="receiver" value="${html[1].innerHTML}"><br>
+               收件详细地址: <input type="text" class="useraddress" value="${html[2].innerHTML}"><br>
+			   收件人电话: <input type="text" class="receiver_mobile" value="${html[3].innerHTML}"><br>
+			   <button class="btn_succ" style="border-radius: 10px;">确定</button>
+              <button class="btn_fail" style="border-radius: 10px;">取消</button>
+		`);
+		//取消按钮
+		$("button.btn_fail").click(function(){
+			$("div.modal").css({display:"none"})
+		})
+		//用户修改获取数据：
+		var arr=[];
+        $("div.modal-content").on("change","input",function(){
+			arr=[];
+			// console.log($(e.target).val());
+			var receiver=$(".receiver").val();
+			var province=$("#receiverState").val();
+			var city=$("#receiverCity").val();
+			var county=$("#receiverDistrict").val();
+			var address=$(".useraddress").val();
+			var tag=$(".tag").val();
+			var receiver_mobile=$(".receiver_mobile").val();
+			arr.push(province,city,county,address,receiver,tag,receiver_mobile);
+		})
+		$(".btn_succ").click(function(){
+			if(arr.length==0){
+				console.log("用户没有修改");
+			}else{
+				$.ajax({
+					type:'put',
+					url:baseUrl+'/v1/users/'+username+'/address/'+addressId,
+					contentType:'application/json',
+					data:JSON.stringify({province:arr[0],city:arr[1],county:arr[2],address:arr[3],receiver:arr[4],tag:arr[5],receiver_mobile:arr[6],id:id}),
+					beforeSend:function(request){
+					request.setRequestHeader("authorization",localStorage.getItem('dashop_token'))
+					},
+					success(data){
+						if(data.code == 403){
+							alert('用户认证已过期，请重新登录');
+							window.localStorage.removeItem('dashop_user');
+							window.localStorage.removeItem('dashop_token');
+							window.localStorage.removeItem('dashop_count');
+							location.href = 'login.html'
+						}
+						if(data.code==200){
+							alert(data.data)
+							$("div.modal").css({display:'none'});
+							loadUserList();
+						}else{
+							alert(data.error)
+						}
+					}
+				})
+			}
+		})
+	}
+	//设置默认
+    function setDefaults(id){
+		$.ajax({
+			type:'post',
+			url:baseUrl+'/v1/users/'+username+'/address/default',
+			contentType:'application/json',
+			dataType:'json',
+			data:JSON.stringify({"id":id,}),
+			beforeSend:function(request){
+				request.setRequestHeader("authorization",localStorage.getItem('dashop_token'))
+			},
+			success(data){
+				if(data.code == 403){
+					alert('用户认证已过期，请重新登录');
+					window.localStorage.removeItem('dashop_user');
+					window.localStorage.removeItem('dashop_token');
+					window.localStorage.removeItem('dashop_count');
+					location.href = 'login.html'
+				}
+				if(data.code==200){
+					alert(data.data)
+					loadUserList()
+				}else{
+					alert(data.error)
+				}
+			}
+		})
+	}
+</script>
+<script type="text/javascript" src="../static/js/personal.js"></script>
+<script>
+	count = window.localStorage.getItem('dashop_count')
+	$('.my_cart_count').html(count)
+	var loginName = window.localStorage.dashop_user;
+	if (loginName){
+		$('#my_login').children().html(loginName).on('click',(e)=>{
+			e.preventDefault()
+			window.localStorage.removeItem('dashop_user');
+			window.localStorage.removeItem('dashop_token');
+			window.localStorage.removeItem('dashop_count');
+			alert('退出登录')
+			window.location.reload()
+			$('#my_login').children().html('登录')
+		})
+	}
+</script>
+</html>

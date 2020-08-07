@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>注册</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <link rel="stylesheet" href="../static/AmazeUI-2.4.2/assets/css/amazeui.min.css"/>
+    <link rel="stylesheet" href="../static/AmazeUI-2.4.2/assets/css/amazeui.css">
+    <link href="../static/css/dlstyle.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="../static/css/loginStyle.css">
+    <script src="../static/js/register.js"></script>
+    <script src="../static/AmazeUI-2.4.2/assets/js/jquery.min.js"></script>
+    <script src="../static/AmazeUI-2.4.2/assets/js/amazeui.min.js"></script>
+    <script src="../static/js/init.js"></script>
+
+</head>
+<body>
+<div style="text-align: center;"><a href=""><img src="../static/images/index/index_logo.png" alt=""></a></div>
+<div class="res-banner">
+    <div class="res-main">
+        <div class="login-box">
+            <div class="am-tabs" id="doc-my-tabs">
+                <ul class="am-tabs-nav am-nav am-nav-tabs am-nav-justify">
+                    <li class="am-active" "><a href="" style="background-color: transparent; border-radius: 10px;  border-bottom-style: solid; border-bottom-color:10px rgb(39, 180, 39);" >用&nbsp;&nbsp;户&nbsp;&nbsp;注 &nbsp;&nbsp;册</a></li>
+                    <!-- <li><a href="" style="border-radius: 10px;">手机号注册</a></li> -->
+                </ul>
+
+                <div class="am-tabs-bd">
+                    <div class="am-tab-panel am-active">
+                        <form method="post">
+                            <div class="user-name">
+                                <label for="user"><i class="am-icon-user"></i></label>
+                                <input type="text" 
+                                name="username" 
+                                id="user" 
+                                placeholder="请输入用户名" 
+                                class="login"
+                                onclick="userTip()"
+                                onchange="checkUser(this.value)">
+                            </div>
+                            <div class="user-email">
+                                <label for="email"><i class="am-icon-envelope-o"></i></label>
+                                <input type="email" 
+                                name="email" 
+                                id="email" 
+                                placeholder="请输入邮箱账号" 
+                                class="login"
+                                onchange="checkEmail(this.value)"
+                                >
+                            </div>
+                            <div class="user-phone">
+                                <label for="phone"><i class="am-icon-mobile-phone am-icon-md"></i></label>
+                                <input type="tel" 
+                                name="phone" 
+                                id="phone" 
+                                placeholder="请输入手机号"
+                                class="login"
+                                onchange="checkPhone(this.value)">
+                            </div>
+                            <div class="user-pass">
+                                <label for="password"><i class="am-icon-lock"></i></label>
+                                <input type="password" 
+                                name="password" 
+                                id="password" 
+                                placeholder="设置密码"
+                                class="login"
+                                onchange="checkPassword(this.value)"
+                                onclick="passwordTip()"
+                                >
+                            </div>
+                            <div class="user-pass">
+                                <label for="passwordRepeat"><i class="am-icon-lock"></i></label>
+                                <input type="password" 
+                                name="passwordRepeat" 
+                                id="passwordRepeat" 
+                                placeholder="确认密码"
+                                class="login"
+                                onchange="checkRePassword(this.value)">
+                            </div>
+                        </form>
+                        <div class="login-links">
+                            <label for="reader-me">
+                                <input id="reader-me1" type="checkbox" onclick="checkRe(this)"> 点击表示您同意商城《服务协议》
+                            </label>
+                        </div>
+                        <div class="am-cf">
+                            <input type="button" name="submit" value="注册" id="submit" class="login">
+                        </div>
+                    </div>
+    <!-- <div class="footer ">
+        <div class="footer-hd ">
+            <p>
+                <a href="# ">恒望科技</a>
+                <b>|</b>
+                <a href="# ">商城首页</a>
+                <b>|</b>
+                <a href="# ">支付宝</a>
+                <b>|</b>
+                <a href="# ">物流</a>
+            </p>
+        </div>
+        <div class="footer-bd ">
+            <p style="width: auto;">
+                <a href="# ">关于恒望</a>
+                <a href="# ">合作伙伴</a>
+                <a href="# ">联系我们</a>
+                <a href="# ">网站地图</a>
+                <em>© 2015-2025 Hengwang.com 版权所有</em>
+            </p>
+        </div>
+    </div>
+</div>  -->
+<script src="../static/js/jquery-3.1.1.min.js"></script>
+<script>
+    $("#submit").click(function () {
+        if (registerCheck()){
+        $.ajax({
+            type: "post",
+            url: baseUrl + "/v1/users",
+            contentType: "application/json",
+            datatype: "json", 
+            data: JSON.stringify({
+                "username": $('#user').val(),
+                "password": $('#password').val(),
+                "email": $('#email').val(),
+                "phone":$('#phone').val(),
+                "carts": localStorage.getItem("cart")
+            }),
+            success: function (data) {
+                if (data.code === 200) {
+                    // 成功响应后进行本地存储
+                    window.localStorage.setItem('dashop_token',data.data.token);
+                    window.localStorage.setItem('dashop_user',data.username);
+                    window.localStorage.setItem('dashop_count',data.carts);
+                    alert('注册成功！');
+                    window.location.href = './index.html'
+                } else {
+                    alert(data.error);
+                }
+            },
+            error: function (e) {
+                alert(data);
+            }
+        });}
+    })
+</script>
+</body>
+</html>

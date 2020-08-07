@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>绿色农产直销网</title>
+    <!--本页面所有资源路径为本地相对路径
+        使用服务器打开页面请将../static/改为 ../
+        如 href="../css/index.css"
+        index.js中src路径同样需要修改
+    -->
+    <link href="../static/css/index.css" rel="Stylesheet" />
+    <link href="../static/css/animate.css" rel="Stylesheet" />
+    <link rel="stylesheet" href="../static/css/slide.css" />
+    <link rel="icon" href="../static/images/index/py.ico">
+    <script src="../static/js/init.js"></script>
+</head>
+
+<body>
+    <!-- <header id='header'>
+    </header> -->
+    <!-- 网页头部 -->
+<div id="top">
+        <div id="logo" class="lf">
+            <a href="index.html">
+                <img class="animated jello" src="../static/images/header/logo.png" alt="logo" />
+            </a>
+        </div>
+        <div id="top_input" class="lf">
+            <input id="input" type="text" placeholder="本店内搜索" />
+            <a href="#" class="rt" ><img id="search" src="../static/images/header/search.png" alt="搜索" /></a>
+        </div>
+        <div class="rt">
+            <ul class="lf">
+                <li><a href="addressAdmin.html" title="我的地址"><img src="../static/images/header/care.svg" alt="" /></a><b>|</b></li>
+                <li><a href="myOrder.html" title="我的订单"><img class="order" src="../static/images/header/order.svg" alt="" /></a><b>|</b></li>
+                <li><a class="my_cart" href="cart.html" title="我的购物车"><b class="my_cart_count">0</b><img class="shopcar" src="../static/images/header/shop_car.svg" alt="" /></a><b>|</b></li>
+                <li><a href="register.html">注册</a><b>|</b></li>
+                <li id ='my_login'><a href="login.html" >登录</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- nav主导航 -->
+    <nav id="nav">
+        <ul>
+            <li style="height: 20px;"></li>
+            <li><a href="index.html"><img src="../static/images/index/index_logo.png" alt=""></a></li>
+        </ul>
+    </nav>
+    
+    <!-- banner部分-->
+
+    <div class="ck-slide">
+        <ul class="ck-slide-wrapper">
+            <li>
+                <a href="product_list.html?catalog_id=1"><img src="../static/images/index/index_banner1.jpg" alt=""></a>
+            </li>
+            <li style="display:none">
+                <a href="product_list.html?catalog_id=1"><img src="../static/images/index/index_banner2.jpg" alt=""></a>
+            </li>
+            <li style="display:none">
+                <a href="product_list.html?catalog_id=1"><img src="../static/images/index/index_banner3.jpg" alt=""></a>
+            </li>
+            <li style="display:none">
+                <a href="product_list.html?catalog_id=1"><img src="../static/images/index/index_banner4.jpg" alt=""></a>
+            </li>
+            <li style="display:none">
+                <a href="product_list.html?catalog_id=1"><img src="../static/images/index/index_banner5.jpg" alt=""></a>
+            </li>
+        </ul>
+        <a href="javascript:;" class="ctrl-slide ck-prev">上一张</a> <a href="javascript:;" class="ctrl-slide ck-next">下一张</a>
+        <div class="ck-slidebox">
+            <div class="slideWrap">
+                <ul class="dot-wrap">
+                    <li class="current"><em>1</em></li>
+                    <li><em>2</em></li>
+                    <li><em>3</em></li>
+                    <li><em>4</em></li>
+                    <li><em>5</em></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 特推部分-->
+    <div id="product">
+        <div class="product_1 lf">
+            <div class="aside lf">
+                <a href="product_details.html?skuid=1">
+                    <img id="aside_image" src="../static/images/index/index_Sbanner_img1.png" alt="" />
+                </a>
+            </div>
+        </div>
+        <div class="product_2 lf">
+
+            <div class="aside lf">
+                <a href="product_details.html?skuid=2">
+                    <img id="aside_image2" src="../static/images/index/index_Sbanner_img2.png" alt="" />
+                </a>
+            </div>
+        </div>
+        <div class="product_3 lf">
+            <div class="aside lf">
+                <a href="product_details.html?skuid=3">
+                    <img id="aside_image3" src="../static/images/index/index_Sbanner_img3.png" alt="" />
+                </a>
+            </div>
+        </div>
+    </div>>
+    <div id="content">
+    </div>
+
+    <footer id='footer'>
+	<div id="foot_box">
+    <div class="icon1 lf">
+        <img src="../static/images/footer/icon1.png" alt=""/>
+        <h3><b>现摘现发</b></h3>
+    </div>
+    <div class="icon2 lf">
+        <img src="../static/images/footer/icon2.png" alt=""/>
+        <h3><b>绿色自然</b></h3>
+    </div>
+    <div class="icon3 lf">
+        <img src="../static/images/footer/icon3.png" alt=""/>
+        <h3><b>支持团购</b></h3>
+    </div>
+    <div class="icon4 lf">
+        <img src="../static/images/footer/icon4.png" alt=""/>
+        <h3><b>公益扶贫</b></h3>
+    </div>
+</div>
+<!-- 页面底部-->
+<div class="foot_bj">
+    <div id="foot">
+        <div class="lf">
+            <p class="footer1"><img src="../static/images/footer/logo.png" alt="" class=" footLogo"/></p>
+            <p class="footer2"><img src="../static/images/footer/footerFont.png" alt=""/></p>
+        </div>
+        <div class="service">
+            <p><b>扫码联系掌柜</b></p>
+            <img src="../static/images/footer/ios.png" class="lf">
+            <img src="../static/images/footer/android.png" alt="" class="lf"/>
+        </div>
+        <div class="download">
+            <img src="../static/images/footer/erweima.png">
+        </div>
+		<!-- 页面底部-备案号 #footer -->
+        <div class="record">
+            <b>&copy;2019-2020 绿色农产直销网 版权所有 grit_my</b> 
+        </div>
+    </div>
+</div>
+	</footer>
+    <script src="../static/js/jquery-3.1.1.min.js"></script>
+    <script src="../static/js/index.js"></script>
+	<!--header-->
+	<script>
+    var loginName = window.localStorage.dashop_user;
+    if (loginName){
+        $('#my_login').children().html(loginName).on('click',(e)=>{
+            e.preventDefault()
+            window.localStorage.removeItem('dashop_user');
+            window.localStorage.removeItem('dashop_token');
+            window.localStorage.removeItem('dashop_count');
+            alert('退出登录')
+            window.location.reload()
+            $('#my_login').children().html('登录')
+        })
+    }
+</script>
+<script src="../static/js/slide.js"></script>
+<script>
+    $('.ck-slide').ckSlide({
+        autoPlay: true, //默认为不自动播放，需要时请以此设置
+        dir: 'x', //默认效果淡隐淡出，x为水平移动，y 为垂直滚动
+        interval: 4000 //默认间隔2000毫秒
+    });
+    //搜索页面跳转
+    $("#search").click(function () {
+        window.location.href = "product_list.html?catalog_id=1";
+    });
+    //跳转到商品列表页面
+    $("#welcome").click(() => {
+        window.location.href = "product_list.html";
+    })
+</script>
+    <script>
+       $.ajax({
+                type : 'get',
+                url : baseUrl+'/v1/goods/index',
+                success:function (response) {
+                     var data = response.data
+                     // const BASE_URL = '../static/media/'
+                    if (response.code==200) {
+                        var html = ''
+                        var IMG_URL = response.base_url
+                        for (var i=0;i<data.length;i++){
+                            html+= '<div class="study">'
+                            html+= '<p>'+data[i].catalog_name+'<a href='+"product_list.html?catalog_id="+data[i].catalog_id+' class="product_more">更多>></a></p>'
+                            var sku = data[i].sku
+                            console.log("sku2: " + sku[2])
+
+                            html += '<div class="study_left lf">'
+                            html+='<div class="product_parameters_main">'
+                            html+='<p>'+sku[0].name+'</p>'
+                            html+='<h3 class="product_name_main">'+sku[0].caption+'</h3>'
+                            html+='<h3 class="product_preferential_main">限时特惠<b class="product_price_main">'+sku[0].price+'</b></h3>\n'
+                            html+='<p class="view_details"><a href='+"product_details.html?skuid="+sku[0].skuid+'>查看详情</a></p>'
+                            html+='</div>'
+                            html+='<img class="study_product_main bp1" src='+IMG_URL+sku[0].image+' alt="" />'
+                            html+='</div>'
+                            html+='<div class="study_right rt"><div class="right_top"><div class="product_parameters_vice1">'
+                            html+='<h3 class="product_name_vice1">'+sku[1].name+'</h3>'
+                            html+='<h3 class="product_preferential_vice1"><b class="product_price_vice1">'+sku[1].price+'</b></h3>'
+                            html+='<p class="view_details"><a href='+"product_details.html?skuid="+sku[1].skuid+'>查看详情</a></p></div>'
+                            html+='<img class="study_product_vice1 bp2" src='+IMG_URL+sku[1].image+' alt="" /></div>'
+                            html+='<div class="right_bottom"><div class="product_parameters_vice2">'
+                            html+='<h3 class="product_name_vice2">'+sku[2].name+'</h3>'
+                            html+='<h3 class="product_preferential_vice2"><b class="product_price_vice2">'+sku[2].price+'</b></h3>'
+                            html+='<p class="view_details"><a href='+"product_details.html?skuid="+sku[2].skuid+'>查看详情</a></p>'
+                            html+='<img class="study_product_vice2 bp3" src='+IMG_URL+sku[2].image+' alt="" />'
+                            html+='</div></div></div>'
+                            html+='</div>'
+                        }
+                        $('#content').html(html)
+                    }
+                },
+                error:function(err){
+                    console.log(err)
+                }
+            })
+    </script>
+      <script>
+        count = window.localStorage.getItem('dashop_count')
+        $('.my_cart_count').html(count)
+        var loginName = window.localStorage.dashop_user;
+        if (loginName){
+            $('#my_login').children().html(loginName).on('click',(e)=>{
+                e.preventDefault()
+                window.localStorage.removeItem('dashop_user');
+                window.localStorage.removeItem('dashop_token');
+                window.localStorage.removeItem('dashop_count');
+                alert('退出登录')
+                window.location.reload()
+                $('#my_login').children().html('登录')
+            })
+        }
+    </script>
+</body>
+</html>

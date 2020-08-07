@@ -1,0 +1,57 @@
+div.modal{
+    position:fixed;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    background:rgba(0,0,0,.7);
+    display:none;
+    z-index:999;
+}
+div.modal-dialog{
+    width:370px;
+    margin:100px auto;
+}
+div.modal-content{
+    background:#fff;
+    border:1px solid #aaa;
+    border-radius:3px;
+    box-shadow: 0 0 5px #aaa;
+    padding:16px 12px;
+}
+div.modal-content .alert{
+    margin:15px 0;
+    border:1px solid #e4393c;
+    background:#fee;
+    color:#e4393c;
+    font-weight:bold;
+    padding:6px;
+    border-radius:2px;
+}
+.modal-content input{
+    box-sizing:border-box;
+    width:100%;
+    margin:6px 0;
+    line-height:2em;
+    border:1px solid #aaa;
+    border-radius:2px ;
+    padding:2px 6px;
+}
+button.btn_succ,button.btn_fail{
+    margin-left:50px;
+    margin-top:20px;
+    width:85px;
+    height:30px;
+    border:none;
+    padding:5px 10px;
+    color:#fff;
+    font-size: 18px;
+    line-height: 24px;
+    box-sizing: border-box
+}
+.btn_succ{
+    background-color:green;
+}
+.btn_fail{
+    background-color: #e4393c;
+}

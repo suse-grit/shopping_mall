@@ -1,0 +1,16 @@
+@charset "utf-8";
+.login:focus{
+    border-style:solid;
+    border-color: #03f403;
+    box-shadow: 0 0 15px #33f403;
+}
+.loginError{
+    border-style:solid;
+    border-color: red;
+    box-shadow:0 0 15px red;
+}
+.login:hover{
+    border-style:solid;
+    border-color: #03f403;
+	box-shadow: 0 0 15px #33f403;
+}

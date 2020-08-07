@@ -1,0 +1,86 @@
+#findpass {
+    width: 800px;
+    margin: 30px auto;
+    border: solid 1px red;
+    padding: 50px 100px;
+    font-size: 16px;
+    /*color: #fff;*/
+    /*text-align: center;*/
+}
+
+#findpass p{
+    width: 80px;
+    height: 30px;
+    border-radius: 3px;
+    line-height: 30px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.active_true{
+    background-color: #cc3333;
+}
+
+.active_flase{
+    background-color: #c3c3c3;
+}
+#findpass .pitem {
+    height: 58px;
+    line-height: 58px;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+#findpass .pitem:nth-child(2),
+#findpass .pitem:nth-child(3),
+#findpass .pitem:nth-child(4),
+#findpass .pitem:nth-child(5) {
+    display: none;
+}
+
+#findpass .rs_username {
+    width: 156px;
+    height: 28px;
+    border: 1px solid #e8e8e8
+}
+
+#findpass .same {
+    display: inline-block;
+    width: 80px;
+    text-align: right;
+}
+
+#findpass .save {
+    width: 136px;
+    height: 42px;
+    line-height: 42px;
+    text-align: center;
+    margin-top: 20px;
+    background: -moz-linear-gradient(top, #997679 0%, #997679 100%);
+    background: -webkit-linear-gradient(top, #997679 0%, #997679 100%);
+    background: -o-linear-gradient(top, #997679 0%, #997679 100%);
+    background: -ms-linear-gradient(top, #997679 0%, #997679 100%);
+    color: #fff;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+#btn2,
+#btn3 {
+    display: none;
+}
+
+.form_box{
+    font-size: 16px;
+}
+.form_box input{
+    height: 30px;
+}
+.submit{
+    width: 120px;
+    height: 30px;
+    color: white;
+    background-color: #cc3333;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 3px;
+}

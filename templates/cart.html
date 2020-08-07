@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>绿色农产直销网-购物车</title>
+    <link rel="stylesheet" href="../static/css/index.css">
+    <link rel="stylesheet" href="../static/css/cart.css" />
+    <link rel="icon" href="../static/images/index/py.ico">
+    <script src="../static/js/init.js"></script>
+</head>
+<body>
+    <div id="top">
+            <div id="logo" class="lf">
+                <a href="index.html">
+                    <img class="animated jello" src="../static/images/header/logo.png" alt="logo" />
+                </a>
+            </div>
+            <div id="top_input" class="lf">
+                <input id="input" type="text" placeholder="本店内搜索" />
+                <a href="#" class="rt" ><img id="search" src="../static/images/header/search.png" alt="搜索" /></a>
+            </div>
+            <div class="rt">
+                <ul class="lf">
+                    <li><a href="addressAdmin.html" title="我的地址"><img src="../static/images/header/care.svg" alt="" /></a><b>|</b></li>
+                    <li><a href="myOrder.html" title="我的订单"><img class="order" src="../static/images/header/order.svg" alt="" /></a><b>|</b></li>
+                    <li><a class="my_cart" href="cart.html" title="我的购物车"><b class="my_cart_count">0</b><img class="shopcar" src="../static/images/header/shop_car.svg" alt="" /></a><b>|</b></li>
+                    <li><a href="register.html">注册</a><b>|</b></li>
+                    <li id ='my_login'><a href="login.html" >登录</a></li>
+                </ul>
+            </div>
+        </div>
+
+    <div class="modal" style="display:none">
+        <div class="modal_dialog">
+            <div class="modal_header">
+                删除提醒
+            </div>
+            <div class="modal_information">
+                <img src="../static/images/model/model_img2.png" alt="" />
+                <span>确定删除您的这个商品吗？</span>
+            </div>
+            <div class="yes"><span>删除</span></div>
+            <div class="no"><span>不删除</span></div>
+        </div>
+    </div>
+    <div class="big">
+            <section id="section">
+                <div id="title">
+                    <b>购物车</b>
+                    <p>
+                        已选<span class="total color">0</span>件商品<span class="interval"></span>合计(不含运费):<span
+                            class="totalPrices color susum">0.00</span><span class="unit color">元</span>
+                    </p>
+                </div>
+                <div id="box">
+                    <div id="content_box">
+                        <div class="imfor_top">
+                            <div class="check_top">
+                                <div class="all">
+				        <input style="float:left;margin-top:12px" type='checkbox' name="allcheck"
+                                     checked   id="allcheck">全选
+                                </div>
+                            </div>
+                            <div class="pudc_top">商品</div>
+                            <div class="pices_top">单价(元)</div>
+                            <div class="num_top">数量</div>
+                            <div class="totle_top">金额</div>
+                            <div class="del_top">操作</div>
+                        </div>
+
+                        <!-- 购物车商品 -->
+                        <div id="cart_imfor" ></div>
+
+                    </div>
+                    <div class="foot">
+                        <div class="foot_check">
+                            <div class="all">
+                            </div>
+                        </div>
+                        <button class="foot_cash" id="go-buy">去结算</button>
+                        <div class="foot_tol"><span>合计(不含运费):</span><span class="foot_pices susumOne">0.00</span><span
+                                class='foot_des'>元</span></div>
+                        <div class="foot_selected">
+                            已选<span class="totalOne color">0</span>件商品
+                        </div>
+                    </div>
+                </div>
+            </section>
+        <!-- </form> -->
+    </div>
+    <!-- 页面底部-->
+    <!-- <footer id="footer"></footer> -->
+    <script src="../static/js/jquery-3.1.1.min.js"></script>
+    <script src="../static/js/index.js"></script>
+    <script src="../static/js/cart.js"></script>
+    <script src="../static/js/jquery-1.11.3.js"></script>
+    <script type="text/javascript" src="../static/js/jquery-3.1.1.min.js"></script>
+    <script src="../static/js/index.js"></script>
+    <script>
+        count = window.localStorage.getItem('dashop_count')
+        $('.my_cart_count').html(count)
+        var loginName = window.localStorage.dashop_user;
+        if (loginName){
+            $('#my_login').children().html(loginName).on('click',(e)=>{
+                e.preventDefault()
+                window.localStorage.removeItem('dashop_user');
+                window.localStorage.removeItem('dashop_token');
+                window.localStorage.removeItem('dashop_count');
+                alert('退出登录')
+                window.location.reload()
+                $('#my_login').children().html('登录')
+            })
+        }
+    </script>
+</body>
+
+</html>

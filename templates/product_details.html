@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>绿色农产直销网-商品页</title>
+    <link href="../static/css/index.css" rel="Stylesheet" />
+    <link href="../static/css/pro_details.css" rel="Stylesheet" />
+    <link href="../static/css/animate.css" rel="Stylesheet" />
+    <link rel="icon" href="../static/images/index/py.ico">
+    <script src="../static/js/init.js"></script>
+</head>
+
+<body>
+    <!-- 页面顶部-->
+    <div id="top">
+        <div id="logo" class="lf">
+            <a href="index.html">
+                <img class="animated jello" src="../static/images/header/logo.png" alt="logo" />
+            </a>
+        </div>
+        <div id="top_input" class="lf">
+            <input id="input" type="text" placeholder="本店内搜索" />
+            <a href="#" class="rt" ><img id="search" src="../static/images/header/search.png" alt="搜索" /></a>
+        </div>
+        <div class="rt">
+            <ul class="lf">
+                <li><a href="addressAdmin.html" title="我的地址"><img src="../static/images/header/care.svg" alt="" /></a><b>|</b></li>
+                <li><a href="myOrder.html" title="我的订单"><img class="order" src="../static/images/header/order.svg" alt="" /></a><b>|</b></li>
+                <li><a class="my_cart" href="cart.html" title="我的购物车"><b class="my_cart_count">0</b><img class="shopcar" src="../static/images/header/shop_car.svg" alt="" /></a><b>|</b></li>
+                <li><a href="register.html">注册</a><b>|</b></li>
+                <li id ='my_login'><a href="login.html" >登录</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- nav主导航 -->
+    <nav id="nav">
+        <ul>
+            <li style="height: 20px;"></li>
+            <li><a href="index.html"><img src="../static/images/index/index_logo.png" alt=""></a></li>
+        </ul>
+    </nav>
+
+    <!-- 内容-->
+    <!--细节导航-->
+    <div id="nav_detail">
+	    <h5></h5>
+    </div>
+    <!--产品预览-->
+    <div id="shop_detail" data-id="">
+        <!-- 左侧-->
+        <div id="preview" class="lf">
+            <div id="mediumDiv">
+                 <img id="mImg" src=""  width="400px" />
+            </div>
+
+        </div>
+        <!-- 右侧-->
+        <div class="right_detail lf">
+            <!-- 商品名称-->
+            <h1></h1>
+            <!--<h1></h1>-->
+            <!-- 商品全称-->
+            <h3></h3>
+            <!-- <h3></h3>-->
+            <!-- 价格部分-->
+            <div class="price">
+                <div id="pro_price"><b>绿色直售：</b><span></span></div>
+                <div class="promise">
+                    <b>服务承诺：</b>
+                    <span>*原产地直发</span>
+                    <span>*现摘现发</span>
+                    <span>*健康保鲜</span>
+                    <span>*72小时发货</span>
+                </div>
+            </div>
+            <!-- 参数部分 客服-->
+            <p class="parameter">
+                <b>联系客服：</b>
+                <span class="connect">151-8262-3583</span><img class="gif" src="../static/images/product_detail/kefuf.gif">
+            </p>
+            <!-- 规格-->
+            <div id="sku">
+
+            </div>
+
+            <!-- 未选择规格，颜色时状态-->
+            <div class="message"></div>
+            <!-- 数量-->
+            <p class="accountChose">
+                <s>数量：</s>
+                <button class="numberMinus">-</button>
+                <input type="text" value="1" class="number" id="buy-num"  readOnly>
+                <button class="numberAdd">+</button>
+            </p>
+            <!-- 购买部分-->
+            <div class="shops">
+                <a href="#" class="buy lf" id="buy_now">立即购买</a>
+                <a href="#" class="shop lf" id="add_cart"><img src="../static/images/product_detail/product_detail_img7.png"
+                        alt="" />加入购物车</a>
+            </div>
+	    <div>
+            </div>
+        </div>
+    </div>
+    <!--为你推荐-->
+    <div id="recommended">
+    <p>为你推荐<span>大家都在选</span></p>
+    <div id="demo" style="width:1000px;overflow:hidden;">
+        <div id="indemo" style="float: left;width: 200%;">
+            <div id="demo1" style="float:left">
+                 <div class="detail_1 lf">
+                    <div class="detail_img1">
+                        <a href="product_list.html?catalog_id=1">
+                        <img src="../static/images/product_detail/product_detail_1.png" border="0" width="197px " height="140px">
+                        </a>
+                    </div>
+                    <p>广元朝天核桃</p>
+                </div>
+                <div class="detail_1 lf">
+                    <div class="detail_img1">
+                        <a href="product_list.html?catalog_id=1">
+                        <img src="../static/images/product_detail/product_detail_2.png" border="0"  width="197px " height="140px">
+                        </a>
+                    </div>
+                    <p>苍溪雪梨</p>
+                </div>
+                <div class="detail_1 lf">
+                    <div class="detail_img1">
+                        <a href="product_list.html?catalog_id=1">
+                        <img src="../static/images/product_detail/product_detail_3.png" border="0" width="197px " height="140px">
+                        </a>
+                    </div>
+                    <p>苍溪红心果</p>
+                </div>
+                <div class="detail_1 lf">
+                    <div class="detail_img1">
+                        <a href="product_list.html?catalog_id=1">
+                        <img src="../static/images/product_detail/product_detail_4.png" border="0" width="197px " height="140px">
+                        </a>
+                    </div>
+                    <p>苍溪脆红李</p>
+                </div>
+
+            </div>
+            <div id="demo2" style="float:left">
+            </div>
+        </div>
+
+    </div>
+
+</div>
+    <div id="iteminfo">
+        <div id="tab">
+            <div class="tab lf">
+                <div class="cat">
+                    <span class="active"><a href="">产地介绍</a></span>
+                    <span><a href="index.html">商品评价</a></span>
+                </div>
+            </div>
+             <div class="cart rt">
+                 <a href="cart.html">
+                     <img src="../static/images/product_detail/product_detail_img9.png" alt="" />
+                 </a>
+            </div>
+        </div>
+        <div class="left lf">
+            <div class="all">
+                <!--<p><img src="images_x/pin_logo.png" alt=""/></p>-->
+                <div id="parm">
+                    <img class="lozad" data-src="../static/images/product_detail/product_detail.jpg" alt="" />
+                   <img src="../static/images/product_detail/product_detail.jpg" alt="" />
+                </div>
+                <div id="sale_protection">
+                    <p>
+                        售后保障
+                        <img src="../static/images/product_detail/product_detail_icon_3.png" alt="" class="ys5" />
+                    </p>
+
+                    <div class="sale_content">
+                        <p class="paper" id="sale_protect">
+                            <img src="../static/images/product_detail/product_detail_img16.png" alt="" />
+                            原产地保障
+                        </p>
+
+                        <p class="content">
+                            凡是从本网站售出的特色商品均为原产地现摘，可追溯至果园！
+                        </p>
+                    </div>
+                </div>
+                <div id="packing_list">
+                    <p>
+                        装箱清单
+                        <img src="../static/images/product_detail/product_detail_icon_2.png" alt="" class="ys5" />
+                    </p>
+
+                    <p class="content">
+                        水果1箱，如有疑问可随时咨询客服！
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="right rt">
+            <div class="aside_nav">
+                <!-- <p><i><img src="../images/product_detail/product_detail_icon_g_1.png" alt=""/></i><a href="#specification_parameter">规格参数</a></p> -->
+                <p><i><img src="../static/images/product_detail/product_detail_icon_t_1.png" alt="" /></i><a href="#product_introduction">产地介绍</a></p>
+                <p><i><img src="../static/images/product_detail/product_detail_icon_d_1.png" alt="" /></i><a href="#sale_protection">售后保障</a></p>
+                <p><i><img src="../static/images/product_detail/product_detail_icon_bao_1.png" alt="" /></i><a href="#sale_protect">装箱清单</a></p>
+                <p><i><img src="../static/images/product_detail/product_detail_icon_up_1.png" alt="" /></i><a href="#">回到顶部</a></p>
+            </div>
+        </div>
+    </div>
+    <footer id='footer'>
+        <!-- 页面底部-->
+        <div class="foot_bj">
+            <div id="foot">
+                <div class="lf">
+                    <p class="footer1"><img src="../static/images/footer/logo.png" alt="" class=" footLogo"/></p>
+                    <p class="footer2"><img src="../static/images/footer/footerFont.png" alt=""/></p>
+                </div>
+                <div class="service">
+                    <p><b>扫码联系掌柜</b></p>
+                    <img src="../static/images/footer/ios.png" class="lf">
+                    <img src="../static/images/footer/android.png" alt="" class="lf"/>
+                </div>
+                <div class="download">
+                    <img src="../static/images/footer/erweima.png">
+                </div>
+                <!-- 页面底部-备案号 #footer -->
+                <div class="record">
+                    <b>&copy;2019-2020 绿色农产直销网 版权所有 grit_my</b> 
+                </div>
+            </div>
+        </div>
+            </footer>
+    <!-- 当退出登录时 -->
+    <script type="text/javascript" src="../static/js/jquery-3.1.1.min.js"></script>
+    <script src="../static/js/index.js"></script>
+    <script>
+        count = window.localStorage.getItem('dashop_count')
+        $('.my_cart_count').html(count)
+        var loginName = window.localStorage.dashop_user;
+        if (loginName){
+            $('#my_login').children().html(loginName).on('click',(e)=>{
+                e.preventDefault()
+                window.localStorage.removeItem('dashop_user');
+                window.localStorage.removeItem('dashop_token');
+                window.localStorage.removeItem('dashop_count');
+                alert('退出登录')
+                window.location.reload()
+                $('#my_login').children().html('登录')
+            })
+        }
+    </script>
+    <script src="../static/js/jquery-3.1.1.min.js"></script>
+    <script src="../static/js/index.js"></script>
+    <script src="../static/js/lozad.js"></script>
+    <script>
+//	$(function(){
+//        $("#btn00").click(function () {
+//            var url=window.location.href;
+//            $.ajax({
+//                url:baseUrl+"/v1/users/weibo/share",
+//                type:"post",
+//                dataType:"json",
+//                contentType:'application/json',
+//		beforeSend:function (request) {
+//                           request.setRequestHeader("authorization",localStorage.getItem('dashop_token'))
+//                       },
+//                data:JSON.stringify({
+//                    // 'text':'',
+//                    'url':url
+ //               }),
+//                //响应成功的回调函数
+ //               success:function (data) {
+                    //发送成功以后重定向回http://127.0.0.1:7000/dadashop/templates/product_details.html
+//                    if(data.code===200){
+ //                       alert("分享成功！");
+                        // window.location.href=url;
+//                    }else {
+ //                       alert(data.error)
+//                    }
+//                }
+ //           })
+//      })
+// })
+//****************************************************
+        (function ($) {
+          $.getUrlParam = function (name) {
+            var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+            var r = window.location.search.substr(1).match(reg);
+            if (r != null) return r;
+            return null;
+          }
+        
+         var skuid = $.getUrlParam('skuid')[2]
+
+        $.ajax({
+                type: 'get',
+                url: baseUrl+'/v1/goods/detail/'+skuid,
+                success: function (result) {
+                    var IMG_URL = result.base_url
+                    $('#nav_detail').html(
+                        '<h5><a href="index.html">首页</a>  <a href="product_list.html?catalog_id=' +
+                        result.data.catalog_id + '">' + result.data.catalog_name + '</a>' +
+                        '  >  ' + result.data.name);
+                    $('#mImg').attr('src', IMG_URL+result.data.image);
+                    $('.right_detail').children('h1').html(result.data.name);
+                    $('.right_detail').children('h3').html(result.data.caption);
+                    $('#pro_price').children('span').html(result.data.price);
+
+
+
+                    $('#shop_detail').attr('data-id',result.data.spu);
+
+                    var html = '';
+                    var attr_names = result.data.sku_sale_attr_names;
+                    var attr_id = result.data.sku_sale_attr_id;
+                    var sale_attr_id = result.data.sku_sale_attr_val_id;
+                    var all_sale_attr_id = result.data.sku_all_sale_attr_vals_id;
+                    var all_attr_names = result.data.sku_all_sale_attr_vals_name;
+                    for(var i=0;i<attr_names.length;i++){
+                    html += '<p class="style"><s class="spu_name" data-id='+attr_id[i]+'>'+attr_names[i]+'：</s>'
+                        for (var j=0;j<all_attr_names[attr_id[i]].length;j++){
+                            if (sale_attr_id[i] == all_sale_attr_id[attr_id[i]][j]){
+                               html += '<input type="button" data-id='+all_sale_attr_id[attr_id[i]][j]+' class="spu_check spu_value l'+i+'" value='+all_attr_names[attr_id[i]][j]+' title='+all_attr_names[attr_id[i]][j]+' />'
+                            }else {
+                                html += '<input type="button" data-id='+all_sale_attr_id[attr_id[i]][j]+' class="spu_value l'+i+'" value='+all_attr_names[attr_id[i]][j]+' title='+all_attr_names[attr_id[i]][j]+' />'
+                            }
+                        }
+                        html += '</p>'
+                    }
+                    $('#sku').html(html)
+
+                },
+                error: function (err) {
+                    console.log( err)
+               }
+            }).then(() => {
+               $('.l0,.l1').click(function(){
+
+                   $(this).addClass("spu_check");
+                   $(this).siblings().removeClass("spu_check");
+                   var attrs = $('.spu_name');
+                   var attr_checks = $('.spu_check');
+                   var data = {
+                        spuid: parseInt($('#shop_detail').attr('data-id')),
+                   };
+                   for(var i=0;i<attrs.length;i++){
+                       data[attrs[i].getAttribute('data-id')] = parseInt(attr_checks[i].getAttribute('data-id'))
+                   }
+                   $.ajax({
+                       type: "post",
+                       url:baseUrl+'/v1/goods/sku',
+                       contentType:'application/json',
+                       dataType:'json',
+                       beforeSend:function (request) {
+                           request.setRequestHeader("authorization",localStorage.getItem('dashop_token'))
+                       },
+                       data: JSON.stringify(data),
+                       success: function (data) {
+                           var result = data;
+                           if(result.code == 403){
+							alert('用户认证已过期，请重新登录');
+							window.localStorage.removeItem('dashop_user');
+							window.localStorage.removeItem('dashop_token');
+							window.localStorage.removeItem('dashop_count');
+							location.href = 'login.html'
+						}
+                           if (result.code==200) {
+                               alert('product_details.html?skuid=' + result.data);
+                               location.href = 'product_details.html?skuid=' + result.data
+                           }
+                           else {
+                               alert(result.error);
+                               history.go(0)
+                           }
+                       },
+                       error: function (data) {
+                        //    alert("系统异常！");
+                       }
+                   });
+
+               });
+ 
+                /**选择商品进行添加 悬停效果**/
+                $(".avenge").mouseover(function () {
+                    $(this).css({
+                        "border": "1px solid #997679",
+                        "color": "#997679"
+                    });
+               }).mouseout(function () {
+                    $(this).css({
+                        "border": "1px solid #666",
+                       "color": "#666"
+                    })
+                })
+            });
+        var n = $("#buy-num").val() * 1;
+        $(".numberMinus").click(function () {
+            if (n > 1) {
+                $("#buy-num").val(n -= 1);
+            }
+        });
+        $(".numberAdd").click(function () {
+            $("#buy-num").val(n += 1);
+        });
+
+
+        $("#add_cart").click(function (e) {
+            e.preventDefault();
+            $(".modal").show();
+            $(".modal_information span").html("是否将您的宝贝加入购物车");
+         
+
+            $('.no').click(function () {
+                $('.modal').hide();
+            })
+            $('.yes').click(function () {
+                var username = window.localStorage.getItem('dashop_user');
+                if (username){
+                    $.ajax({
+                    type: "post",
+                    url:baseUrl+'/v1/carts/'+username,
+                    beforeSend:function (request) {
+                        request.setRequestHeader("authorization",localStorage.getItem('dashop_token'))
+                    },
+                    contentType:'application/json',
+                    dataType:'json',
+                    data: JSON.stringify({
+                        sku_id: skuid,
+                        count: $("#buy-num").val()
+                    }),
+                    success: function (data) {
+                        var result = data;
+                        if(result.code == 403){
+							alert('用户认证已过期，请重新登录');
+							window.localStorage.removeItem('dashop_user');
+							window.localStorage.removeItem('dashop_token');
+							window.localStorage.removeItem('dashop_count');
+							location.href = 'login.html'
+						}
+                        if (result.code==200) {
+                            console.log(result.data)
+			                window.localStorage.setItem('dashop_count',result.data.carts_count)
+                            alert("添加购物车成功！");
+                            location.reload()
+                        } else {
+                            alert(result.error);
+                            location.reload()
+
+                        }
+
+                    },
+                    error: function (data) {
+                        alert("系统异常！");
+                    }
+                });
+                }else {
+                    var data = []
+                    function getData() {
+                         var nameArr = [];
+                        $(".spu_name").each(function() {
+                            nameArr.push($(this).html());
+                        });
+                        var valueArr = [];
+                        $(".spu_value").each(function() {
+                             if ($(this).hasClass('spu_check')){
+                                valueArr.push($(this).val());
+                            }
+                        });
+                        var sku_data = {
+                            id: skuid,
+                            count: $("#buy-num").val(),
+                            name: $('.right_detail').children('h3').html(),
+                            default_image_url:$('#mImg').attr('src').replace(imgUrl,''),
+			                price:parseInt($('#pro_price').children('span').html()) ,
+                            selected: true,
+                            sku_sale_attr_name:nameArr,
+                            sku_sale_attr_val:valueArr
+                            };
+                        console.log(data)
+                        data.push(sku_data)
+                        console.log(data)
+
+                    }
+                   
+                    function addData (sku_data) {
+                        var oldData = JSON.parse(window.localStorage.getItem('cart'));
+                        console.log(oldData)
+                        var result = '';
+                        if(oldData){
+                            for(var i=0;i<oldData.length;i++){
+                               if (oldData[i].id == sku_data[0].id){
+                                   oldData[i].count = parseInt(oldData[i].count)+parseInt(sku_data[0].count);
+                                   console.log(oldData[i].count)
+                                   result = oldData
+                               }else {
+                                   result =  oldData.concat(sku_data)
+                               }
+                            }
+                        }else{
+                            result = sku_data
+                        }
+                        window.localStorage.setItem('cart',JSON.stringify(result))
+
+                    }
+                    function start() {
+                        getData();
+                        addData(data);
+                        alert("离线添加购物车成功！");
+                        location.reload();
+                        $('.model').hide();
+                       
+                    }
+                   // setTimeout(start,1000);
+                    start();
+                }
+
+            })
+        })
+        $("#buy_now").click(function(){
+            var sku_id = $.getUrlParam("skuid")[2]
+            var buy_num = $("#buy-num").val()
+            console.log(sku_id)
+            console.log(buy_num)
+            window.location.href = "orderConfirm.html?sku_id="+sku_id+"&buy_num="+buy_num
+        });
+     })(jQuery);
+
+    </script>
+</body>
+</html>

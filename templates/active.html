@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>激活</title>
+    <link href="../static/css/index.css" rel="Stylesheet" />
+    <link href="../static/css/animate.css" rel="Stylesheet" />
+    <link rel="stylesheet" href="../static/css/slide.css" />
+    <link rel="icon" href="../static/images/index/py.ico">
+    <link rel="stylesheet" href="../static/css/findpass.css">
+    <script src="../static/js/init.js"></script>
+    <script src="../static/js/jquery-3.1.1.min.js"></script>
+</head>
+<div id="top">
+    <div id="logo" class="lf">
+        <a href="index.html">
+            <img class="animated jello" src="../static/images/header/logo.png" alt="logo" />
+        </a>
+    </div>
+    <div id="top_input" class="lf">
+        <input id="input" type="text" placeholder="请输入您要搜索的内容" />
+        <a href="#" class="rt"><img id="search" src="../static/images/header/search.png" alt="搜索" /></a>
+    </div>
+    <div class="rt">
+        <ul class="lf">
+            <li><a href="myCollect.html" title="我的收藏"><img class="care" src="../static/images/header/care.png"
+                        alt="" /></a><b>|</b></li>
+            <li><a href="myOrder.html" title="我的订单"><img class="order" src="../static/images/header/order.png"
+                        alt="" /></a><b>|</b></li>
+            <li><a href="cart.html" title="我的购物车"><img class="shopcar" src="../static/images/header/shop_car.png"
+                        alt="" /></a><b>|</b></li>
+            <li><a href="lookforward.html">帮助</a><b>|</b></li>
+            <li id='my_login'><a href="login.html">登录</a></li>
+        </ul>
+    </div>
+</div>
+
+
+<div id="findpass">
+    <div class="isActive">是否激活？</div>
+    <p class="active_true">是</p>
+    <p class="active_flase">否</p>
+
+</div>
+
+<div id="foot_box">
+    <div class="icon1 lf">
+        <img src="../static/images/footer/icon1.png" alt="" />
+        <h3>品质保障</h3>
+    </div>
+    <div class="icon2 lf">
+        <img src="../static/images/footer/icon2.png" alt="" />
+        <h3>私人定制</h3>
+    </div>
+    <div class="icon3 lf">
+        <img src="../static/images/footer/icon3.png" alt="" />
+        <h3>皮粉特供</h3>
+    </div>
+    <div class="icon4 lf">
+        <img src="../static/images/footer/icon4.png" alt="" />
+        <h3>专属特权</h3>
+    </div>
+</div>
+<!-- 页面底部-->
+<div class="foot_bj">
+    <div id="foot">
+        <div class="lf">
+            <p class="footer1"><img src="../static/images/footer/logo.png" alt="" class=" footLogo" /></p>
+            <p class="footer2"><img src="../static/images/footer/footerFont.png" alt="" /></p>
+        </div>
+        <div class="service">
+            <p>皮爷の商城客户端</p>
+            <img src="../static/images/footer/ios.png" class="lf">
+            <img src="../static/images/footer/android.png" alt="" class="lf" />
+        </div>
+        <div class="download">
+            <img src="../static/images/footer/erweima.png">
+        </div>
+        <!-- 页面底部-备案号 #footer -->
+        <div class="record">
+            &copy;2018 皮爷の集团有限公司 版权所有 京ICP证xxxxxxxxxxx
+        </div>
+    </div>
+</div>
+</body>
+<script src="../static/js/jquery-3.1.1.min.js"></script>
+<script>
+    var url_params = location.search
+    var isBtn = document.getElementsByClassName('active_true')[0];
+    isBtn.onclick=function(){
+        $.ajax({
+                url: baseUrl+'/v1/users/activation'+url_params,
+                type: 'get',
+                dataType: "json",
+                success: function (d) {
+                    if (d.code == 200) {
+                        alert('激活成功！')
+                        window.location.href="index.html"
+                    }else{
+                      alert(d.error)
+                    }
+                }
+            })
+    }
+</script>
+</html>
